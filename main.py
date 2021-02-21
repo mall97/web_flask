@@ -6,7 +6,7 @@ app = Flask(__name__)
 def home():
     return render_template("home.html")
 
-@app.route("/racks")
+@app.route("/racks",  methods = ['GET' , 'POST' ])
 def racks():
     return render_template("racks.html")
 
