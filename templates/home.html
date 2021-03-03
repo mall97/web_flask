@@ -2,9 +2,9 @@
 <html lang="en" dir="ltr">
  <head>
    <meta charset="utf-8">
-   <title>CI MGU22</title>
+   <title>{% block content %}{% endblock %}</title>
  </head>
- <body>
+  <body>
     <header>
       <div class="front_page">
         <h1 class="home_title">Home page management of CI in MGU</h1>
@@ -14,11 +14,8 @@
             <li><a href="{{ url_for('racks') }}">Choose Test Rack</a></li>
           </ul>
         </nav></strong>
-      </div>
+      </div> 
     </header>
-    
-    {% block content %}
-    {% endblock %}
     
  </body>
 </html>
